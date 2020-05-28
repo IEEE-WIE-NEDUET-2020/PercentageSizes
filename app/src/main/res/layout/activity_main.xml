@@ -1,0 +1,35 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+  xmlns:app="http://schemas.android.com/apk/res-auto"
+  xmlns:tools="http://schemas.android.com/tools"
+  android:layout_width="match_parent"
+  android:layout_height="match_parent"
+  tools:context=".MainActivity">
+
+  <androidx.percentlayout.widget.PercentRelativeLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent">
+    <TextView
+      android:id="@+id/fifty_huntv"
+      android:layout_width="0dp"
+      android:layout_height="0dp"
+      android:background="#ff7acfff"
+      android:text="20% - 50%"
+      android:textColor="@android:color/white"
+      app:layout_heightPercent="20%"
+      app:layout_widthPercent="50%" />
+    <TextView
+      android:layout_width="0dp"
+      android:layout_height="0dp"
+      android:layout_toRightOf="@id/fifty_huntv"
+      android:background="#ffff5566"
+      android:text="80%-50%"
+      app:layout_heightPercent="80%"
+      app:layout_widthPercent="50%"
+      />
+
+  </androidx.percentlayout.widget.PercentRelativeLayout>
+
+</androidx.constraintlayout.widget.ConstraintLayout>
